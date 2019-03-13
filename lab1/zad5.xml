@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='ISO-8859-2' ?>
+<komputer>
+	<procsor>
+		<nazwa>Intel Core i5</nazwa>
+		<taktowanie>2.8</taktowanie>
+		<ilosc_rdzeni>6</ilosc_rdzeni>
+	</procsesor>
+	<pamiec>
+		<ram rodzaj="DDR", zlacze="DIMM">8GB</ram>
+	</pamiec>
+	<dyski>	
+		<naped rodzaj='SSD'>
+			<ilosc>2</ilosc>
+		</naped>
+		<naped rodzaj='HDD'>
+			<ilosc>1</ilosc>
+		</naped>
+	</dyski>
+	
+</komputer>

@@ -1,0 +1,55 @@
+grupa  {
+display: inline;
+float: left;
+width: 30%;
+border: solid 2px;
+margin: 6px;
+background: grey;
+}
+
+osoba {
+display: block;
+padding: 3px;
+border: solid 5px;
+margin: 4px;
+}
+grupa[nr='1']>osoba {
+background: green;
+}
+
+grupa[nr='2']>osoba {
+background: yellow;
+}
+
+grupa[nr='3']>osoba {
+background: red;
+}
+
+nr_albumu {
+display: block; 
+}
+nr_albumu:before {
+content: "Nr Albumu: ";
+}
+osoba[plec='K']>nazwisko:after{
+content: url('https://inf.ug.edu.pl/~lmielewczyk/teaching/ss/proj-jez-xml/lab/files/oznaczenieKobieta.png');
+}
+osoba[plec='K']:hover{
+background: pink;
+}
+osoba[plec='M']:hover{
+background: blue;
+}
+osoba[plec='M']>nazwisko:after{
+content: url('https://inf.ug.edu.pl/~lmielewczyk/teaching/ss/proj-jez-xml/lab/files/oznaczenieMezczyzna.png');
+}
+imie {
+font-family: Arial;
+font-size: 15px;
+}
+nazwisko {
+font-family: Arial;
+font-size: 15px;
+font-weight: bold; 
+}
+

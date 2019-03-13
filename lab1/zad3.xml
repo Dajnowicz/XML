@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-2'?>
+<biblioteka>
+<ksiazki>
+    <ksiazka>
+	<rok_wydania>2012</rok_wydania>    
+	<tytul>XML na poważnie</tytul>
+        <autor>Jan Kowalski</autor>
+	<opis>Dowiesz się wielu rzeczy na temat języka XML np. o znacznikach, czyli wyrażeniach typu, i wielu innych</opis>
+	<cena waluta="zł">25.90</cena>
+    </ksiazka>
+    <ksiazka> 
+	<tytul_angielski>'Beginner's guide for PHP'</tytul_angielski>
+	<tytul_polski>Przewodnik po PHP</tytul_polski>
+        <autor>Vikram Vaswani</autor> 
+	<opis>"do uzupelnienia"</opis>
+	<cena>15.30</cena>
+    </ksiazka>
+</ksiazki>
+    <artykul atr="co" atr2= "drugi" atr3="what" atr4="hey">
+	<tytul>MatmaDyskretna</tytul>
+	<autor>Ja</autor>
+	<opis>Super Ksiazka </opis>
+    </artykul>
+</biblioteka>

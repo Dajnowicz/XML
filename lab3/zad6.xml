@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE korzen SYSTEM "zad6.dtd">
+<korzen kolor="czarny">
+	<wezel kolor="czerwony">
+		<lisc kolor= "czarny"/>
+		<lisc kolor= "czarny"/>
+	</wezel>
+	<wezel kolor="czarny">
+		<wezel kolor="czerwony"> 
+			<lisc kolor="czarny"/>
+			<lisc kolor="czarny"/>
+		</wezel>
+		<lisc kolor="czarny"/>
+	</wezel>
+</korzen>

@@ -1,0 +1,6 @@
+<!ELEMENT glowny (podrzedny+,(parzysta+ | nieparzysty), pierwszy, drugi)>
+<!ELEMENT podrzedny (#PCDATA)>
+<!ELEMENT parzysta (#PCDATA)>
+<!ELEMENT nieparzysty (#PCDATA)>
+<!ELEMENT pierwszy (#PCDATA)>
+<!ELEMENT drugi (#PCDATA)>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE glowny SYSTEM "zad3.dtd">
+<glowny>
+<unikatowy1 idU1="id1">Jeden</unikatowy1>
+<unikatowy2 idU2="id2">Dwa</unikatowy2>
+<pobrany id="id2">Trzy</pobrany>
+</glowny>
+<!-- 1. nie przejdzie -->
+<!-- 2. nie przejdzie-->
+<!-- 3. nie przejdzie -->

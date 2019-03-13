@@ -1,0 +1,5 @@
+<!ELEMENT glowny (podrzedny+)>
+<!ELEMENT podrzedny (#PCDATA)>
+<!ATTLIST podrzedny atrybut1 ID #REQUIRED>
+<!ATTLIST podrzedny atrybut2 (cos) #IMPLIED>
+<!ATTLIST podrzedny atrybut3 (w1|w2|w3) "w1">

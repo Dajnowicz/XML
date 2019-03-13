@@ -1,0 +1,7 @@
+
+<KlasaA>
+	<imie>Testor</imie>
+	<nazwisko>Testowsa</nazwisko>
+	<urodziny>9Maj</urodziny>
+	<wychowawca> Eliza Test</wychowawca>
+</KlasaA>

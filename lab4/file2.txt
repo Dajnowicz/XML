@@ -1,0 +1,6 @@
+<KlasaB>
+	<imie>Testor2</imie>
+	<nazwisko>Testowsa2</nazwisko>
+	<urodziny>9Maj2</urodziny>
+	<wychowawca> Eliza Test2</wychowawca>
+</KlasaB>

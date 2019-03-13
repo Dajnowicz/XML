@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE szkola [
+
+<!ENTITY file SYSTEM "file.txt">
+<!ENTITY file2 SYSTEM "file2.txt">
+
+<!ELEMENT szkola (adres, klasa)>
+<!ATTLIST szkola numer_szkoly CDATA #REQUIRED>
+
+<!ELEMENT adres (miasto, ulica, numer_ulicy)>
+<!ATTLIST adres wojewodztwo CDATA #IMPLIED>
+<!ATTLIST adres kraj  CDATA #IMPLIED>
+
+<!ELEMENT klasa (uczniowie)>
+<!ELEMENT uczniowie (uczen+)>
+<!ELEMENT uczen (KlasaA|KlasaB)>
+<!ATTLIST uczen id ID #REQUIRED>
+
+<!ELEMENT KlasaA (imie, nazwisko, urodziny, wychowawca)>
+<!ELEMENT KlasaB (imie, nazwisko, urodziny, wychowawca)>
+
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT numer_ulicy (#PCDATA)>
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT urodziny (#PCDATA)>
+<!ELEMENT wychowawca (#PCDATA)>
+]>
+
+<szkola numer_szkoly="32"> 
+        <adres wojewodztwo="Pomorskie" kraj="Polska">
+                <miasto>Gdynia</miasto> 
+                <ulica>Legionow</ulica> 
+                <numer_ulicy>10</numer_ulicy> 
+        </adres>
+        <klasa>
+                <uczniowie>
+                        <uczen id="N24345"> 
+				&file;
+                        </uczen>
+                        <uczen id="N23454">
+				&file2;
+                        </uczen>
+                </uczniowie>
+        </klasa>
+</szkola>

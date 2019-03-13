@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE glowny SYSTEM "zad1.dtd">
+<glowny>
+<podrzedny>Podrzedny</podrzedny>
+<parzysta>Parzysta 1</parzysta>
+<podrzedny>Podrzedny 2</podrzedny>
+<parzysta>Parzysta 2</parzysta>
+<podrzedny>Podrzedny 3</podrzedny>
+<pierwszy>Pierwszy 1</pierwszy>
+<podrzedny>Podrzedny 4</podrzedny>
+<pierwszy>Pierwszy 2</pierwszy>
+<podrzedny>Podrzedny 5</podrzedny>
+<pierwszy>Pierwszy 3</pierwszy>
+<drugi>Drugi 1</drugi>
+</glowny>

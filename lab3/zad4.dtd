@@ -1,0 +1,10 @@
+<!ELEMENT nauka (rodzaje+,rzeczowniki+)>
+<!ELEMENT rodzaje (rodzaj+)>
+<!ELEMENT rodzaj (#PCDATA)>
+<!ATTLIST rodzaj skrot ID #REQUIRED>
+<!ELEMENT rzeczowniki (rzeczownik+)>
+<!ELEMENT rzeczownik (nazwa,synonimy*)>
+<!ATTLIST rzeczownik rodzaj IDREF #REQUIRED>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT synonimy (#PCDATA)>
+

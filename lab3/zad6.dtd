@@ -1,0 +1,7 @@
+<!ELEMENT korzen (wezel|lisc|galaz)>
+<!ELEMENT wezel ((wezel,wezel) | (lisc,lisc) |(wezel, lisc)| (lisc,wezel))>
+<!ELEMENT lisc (#PCDATA)>
+<!ELEMENT galaz (#PCDATA)>
+<!ATTLIST korzen kolor (czarny)  #FIXED "czarny">
+<!ATTLIST wezel kolor (czerwony | czarny) #REQUIRED>
+<!ATTLIST lisc kolor (czarny) #FIXED "czarny">

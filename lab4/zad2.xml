@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE wyniki [
+  <!ELEMENT wyniki (przedmiot*) >
+  <!ELEMENT przedmiot (nazwa, egzaminator, rodzaj, ocena) >
+  <!ELEMENT egzaminator (tytul, imie, nazwisko) >
+  <!ELEMENT nazwa (#PCDATA) >
+  <!ELEMENT rodzaj (#PCDATA) >
+  <!ELEMENT ocena (#PCDATA) >
+  <!ELEMENT tytul (#PCDATA) >
+  <!ELEMENT imie (#PCDATA) >
+  <!ELEMENT nazwisko (#PCDATA) >
+
+  <!ENTITY Algo "Algorytmy">
+  <!ENTITY Mat "Matematyka">
+  <!ENTITY Siec "Sieci komputerowe">
+  <!ENTITY Sys "Systemy operacyjne">
+  <!ENTITY X "XML">
+  <!ENTITY Prog "Programowanie">
+
+  <!ENTITY dr "doktor">
+  <!ENTITY Pf "profesor">
+  <!ENTITY drH " doktor habilitowany">
+  <!ENTITY mgr "magister">
+  <!ENTITY drI "doktor inżynier">
+
+  <!ENTITY nid "niedostateczny">
+  <!ENTITY dos "dosteczny">
+  <!ENTITY dosp " dostateczny plus ">
+  <!ENTITY dob "dobry">
+  <!ENTITY dobp "dobry plus">
+  <!ENTITY bd "bardzo dobry)">
+
+  <!ENTITY w "wykład">
+  <!ENTITY ca "ćwiczenia audytoryjne">
+  <!ENTITY cl " ćwiczenia laboratoryjne ">
+
+
+]>
+<wyniki>
+	<przedmiot>
+		<nazwa>&Algo;</nazwa>
+		<egzaminator>
+			<tytul>&dr;</tytul>
+			<imie>Pankracy</imie>
+			<nazwisko>Bajeczny</nazwisko>
+		</egzaminator>
+		<rodzaj>&w;</rodzaj>
+		<ocena>&dob;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Algo;</nazwa>
+		<egzaminator>
+			<tytul>&Pf;, &drH;</tytul>
+			<imie>Bianor</imie>
+			<nazwisko>Łysy</nazwisko>
+		</egzaminator>
+		<rodzaj>&ca;</rodzaj>
+		<ocena>&dos;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Mat;</nazwa>
+		<egzaminator>
+			<tytul>&drH;</tytul>
+			<imie>Marcel</imie>
+			<nazwisko>Chabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&w;</rodzaj>
+		<ocena>&dosp;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Mat;</nazwa>
+		<egzaminator>
+			<tytul>&dosp;</tytul>
+			<imie>Klet</imie>
+			<nazwisko>Zabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&ca;</rodzaj>
+		<ocena>&dosp;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Prog;</nazwa>
+		<egzaminator>
+			<tytul>&dr;</tytul>
+			<imie>Amon</imie>
+			<nazwisko>Fabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&w;</rodzaj>
+		<ocena>&dos;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Prog;</nazwa>
+		<egzaminator>
+			<tytul>&dr;</tytul>
+			<imie>Fidol</imie>
+			<nazwisko>Jadacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&ca;</rodzaj>
+		<ocena>&dob;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Prog;</nazwa>
+		<egzaminator>
+			<tytul>&mgr;</tytul>
+			<imie>Klet</imie>
+			<nazwisko>Zabacki</nazwisko>
+		</egzaminator>
+		<rodzaj>&cl;</rodzaj>
+		<ocena>&dobp;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Siec;</nazwa>
+		<egzaminator>
+			<tytul>&drI;</tytul>
+			<imie>Kanizjusz</imie>
+			<nazwisko>Miłosierny</nazwisko>
+		</egzaminator>
+		<rodzaj>&w;</rodzaj>
+		<ocena>&dob;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Siec;</nazwa>
+		<egzaminator>
+			<tytul>&dr;</tytul>
+			<imie>Pankracy</imie>
+			<nazwisko>Bajeczny</nazwisko>
+		</egzaminator>
+		<rodzaj>&ca;</rodzaj>
+		<ocena>&dos;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Sys;</nazwa>
+		<egzaminator>
+			<tytul>&drI;</tytul>
+			<imie>Ksawery</imie>
+			<nazwisko>Melon</nazwisko>
+		</egzaminator>
+		<rodzaj>&w;</rodzaj>
+		<ocena>&dobp;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&Sys;</nazwa>
+		<egzaminator>
+			<tytul>&drI;</tytul>
+			<imie>Ksawery</imie>
+			<nazwisko>Melon</nazwisko>
+		</egzaminator>
+		<rodzaj>&cl;</rodzaj>
+		<ocena>&dobp;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&X;</nazwa>
+		<egzaminator>
+			<tytul>&Pf;, &drH;</tytul>
+			<imie>Ramzes</imie>
+			<nazwisko>Koniczyna</nazwisko>
+		</egzaminator>
+		<rodzaj>&w;</rodzaj>
+		<ocena>&bd;</ocena>
+	</przedmiot>
+	<przedmiot>
+		<nazwa>&X;</nazwa>
+		<egzaminator>
+			<tytul>&dr;</tytul>
+			<imie>Scholastyka</imie>
+			<nazwisko>Bławatek</nazwisko>
+		</egzaminator>
+		<rodzaj>&cl;</rodzaj>
+		<ocena>&bd;</ocena>
+	</przedmiot>
+</wyniki>

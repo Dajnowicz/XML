@@ -1,0 +1,5 @@
+
+<!ELEMENT stopka (#PCDATA)>
+<!ENTITY autor "Marcel Dajnowicz">
+<!ENTITY copy "&#169;">
+

@@ -1,0 +1,35 @@
+
+<!ENTITY % osoba "(dziecko*, student*, pracownik*)">
+<!ELEMENT osoby (%osoba;)>
+
+
+<!ENTITY % dane "(imie, nazwisko, data_urodzenia)">
+<!ENTITY % pozycja "stanowisko">
+<!ELEMENT dziecko %dane;>
+
+<!ELEMENT student (%dane;) >
+<!ELEMENT pracownik (%dane;, %pozycja;) >
+
+
+
+<!ENTITY % r "#REQUIRED">
+<!ENTITY % km "(k|m)">
+<!ENTITY % cd "CDATA">
+
+<!ATTLIST dziecko plec %km; %r;>
+<!ATTLIST dziecko pesel %cd; %r;>
+<!ATTLIST student plec %km; %r;>
+<!ATTLIST student pesel %cd; %r;>
+<!ATTLIST student nr_albumu %cd; %r;>
+<!ATTLIST pracownik plec %km; %r;>
+<!ATTLIST pracownik pesel %cd; %r;>
+
+
+<!ENTITY % pc "#PCDATA">
+
+<!ELEMENT imie (%pc;) >
+<!ELEMENT nazwisko (%pc;) >
+<!ELEMENT data_urodzenia (%pc;) >
+<!ELEMENT nr_albumu (%pc;) >
+<!ELEMENT stanowisko (%pc;) >
+

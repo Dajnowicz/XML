@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='ISO-8859-2' ?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<studia kierunek='informatyka'>
+	<grupa nr='1'>
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+		
+		<osoba plec='K'>
+			<imie>Szymon</imie>
+			<nazwisko>Debski</nazwisko>
+			<nr_albumu>768432</nr_albumu>
+		</osoba>
+
+		<osoba plec='D'>
+			<imie>Kasper </imie>
+			<nazwisko>Cisewski</nazwisko>
+			<nr_albumu>213243</nr_albumu>
+		</osoba>
+		
+		<osoba plec='M'>
+			<imie> Adam</imie>
+			<nazwisko>Gulczynski</nazwisko>
+			<nr_albumu>654321</nr_albumu>
+		</osoba>
+
+		<osoba plec='K'>
+			<imie>Dominik</imie>
+			<nazwisko>Gomez</nazwisko>
+			<nr_albumu>123456</nr_albumu>
+		</osoba>
+	</grupa>
+
+	<grupa nr='2'>
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+		
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+		
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+	
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+	</grupa>
+
+
+	<grupa nr='3'>
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+		
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+		
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+		</osoba>
+	
+		<osoba plec='M'>
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<nr_albumu>253971</nr_albumu>
+
+		</osoba>
+	</grupa>
+</studia>

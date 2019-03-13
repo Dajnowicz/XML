@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE glowny SYSTEM "zad2.dtd">
+<glowny>
+	<podrzedny atrybut1="reed" atrybut2="cos" atrybut3="w1"> 1 </podrzedny>
+	<podrzedny atrybut1="werew" atrybut2="cos" atrybut3="w2"> 2</podrzedny>
+	<podrzedny atrybut1="wefwe" atrybut2="cos" atrybut3="w3"> 3</podrzedny>
+	<podrzedny atrybut1="xcvxc" atrybut2="cos" atrybut3="w1"> 4</podrzedny>
+	<podrzedny atrybut1="sdfs" atrybut2="cos" atrybut3="w2"> 5</podrzedny>
+</glowny>
