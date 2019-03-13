@@ -1,0 +1,3 @@
+<!ELEMENT KlasaA (imie, nazwisko, urodziny, wychowawca)>
+<!ELEMENT KlasaB (imie, nazwisko, urodziny, wychowawca)>
+

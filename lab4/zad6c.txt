@@ -1,0 +1,9 @@
+<!ELEMENT miasto (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT numer_ulicy (#PCDATA)>
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT urodziny (#PCDATA)>
+<!ELEMENT wychowawca (#PCDATA)>
+

@@ -1,0 +1,5 @@
+<!ELEMENT klasa (uczniowie)>
+<!ELEMENT uczniowie (uczen+)>
+<!ELEMENT uczen (KlasaA|KlasaB)>
+<!ATTLIST uczen id ID #REQUIRED>
+

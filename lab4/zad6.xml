@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE szkola SYSTEM "zad6.dtd">
+<szkola numer_szkoly="32"> 
+        <adres wojewodztwo="Pomorskie" kraj="Polska">
+                <miasto>Gdynia</miasto> 
+                <ulica>Legionow</ulica> 
+                <numer_ulicy>10</numer_ulicy> 
+        </adres>
+        <klasa>
+                <uczniowie>
+                        <uczen id="N24345"> 
+					<KlasaA>
+						<imie>Testor</imie>
+						<nazwisko>Testowsa</nazwisko>
+						<urodziny>9Maj</urodziny>
+						<wychowawca> Eliza Test</wychowawca>
+					</KlasaA>
+	
+                        </uczen>
+                        <uczen id="N23454">
+					<KlasaB>
+						<imie>Testor2</imie>
+						<nazwisko>Testowsa2</nazwisko>
+						<urodziny>9Maj2</urodziny>
+						<wychowawca> Eliza Test2</wychowawca>
+					</KlasaB>
+                        </uczen>
+                </uczniowie>
+        </klasa>
+</szkola>

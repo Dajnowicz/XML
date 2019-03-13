@@ -1,0 +1,15 @@
+<!ENTITY % zad6a SYSTEM "zad6a.txt">
+<!ENTITY % zad6b SYSTEM "zad6b.txt">
+<!ENTITY % zad6c SYSTEM "zad6c.txt">
+
+
+
+<!ELEMENT szkola (adres, klasa)>
+<!ATTLIST szkola numer_szkoly CDATA #REQUIRED>
+
+<!ELEMENT adres (miasto, ulica, numer_ulicy)>
+<!ATTLIST adres wojewodztwo CDATA #IMPLIED>
+<!ATTLIST adres kraj  CDATA #IMPLIED>
+%zad6a;
+%zad6b;
+%zad6c;

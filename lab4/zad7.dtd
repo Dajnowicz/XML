@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!ENTITY % NowaMatura "INCLUDE">
+<!ENTITY % StaraMatura "IGNORE">
+<!ENTITY % pcd "#PCDATA">
+
+<!ELEMENT matura (egzamin*)>
+
+<![%StaraMatura; [
+<!ELEMENT egzamin (nazwa, ocena)>
+<!ATTLIST egzamin rezultat (zaliczony|niezaliczony) #REQUIRED>
+<!ELEMENT ocena (%pcd;)>
+]]>
+
+<![%NowaMatura; [
+<!ELEMENT egzamin (nazwa, punkty)>
+<!ELEMENT punkty (%pcd;)>
+<!ATTLIST egzamin proc CDATA "0%">
+<!ATTLIST egzamin lvl (pods|roz) "pods">
+
+]]>
+
+<!ELEMENT nazwa (%pcd;)>

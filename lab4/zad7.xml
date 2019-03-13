@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE matura SYSTEM "zad7.dtd">
+
+<matura>
+	<egzamin lvl="pods" proc="23%">
+		<nazwa>Jezyk Polski</nazwa>
+		<punkty>20</punkty>
+	</egzamin>
+	<egzamin lvl ="roz" proc="30%">
+		<nazwa>Matematyka</nazwa>
+		<punkty>36</punkty>
+	</egzamin>
+	<egzamin lvl="pods" proc="70%">
+		<nazwa>Angielski</nazwa>
+		<punkty>3</punkty>
+	</egzamin>
+	<egzamin lvl="roz" proc="10%">
+		<nazwa>Geografia</nazwa>
+		<punkty>27</punkty>
+	</egzamin>
+</matura>
