@@ -1,7 +1,21 @@
-<!ELEMENT korzen (wezel|lisc|galaz)>
-<!ELEMENT wezel ((wezel,wezel) | (lisc,lisc) |(wezel, lisc)| (lisc,wezel))>
-<!ELEMENT lisc (#PCDATA)>
-<!ELEMENT galaz (#PCDATA)>
-<!ATTLIST korzen kolor (czarny)  #FIXED "czarny">
-<!ATTLIST wezel kolor (czerwony | czarny) #REQUIRED>
-<!ATTLIST lisc kolor (czarny) #FIXED "czarny">
+<!ELEMENT zamowienie (adres, artykuly)>
+<!ATTLIST zamowienie numer_zamowienia CDATA #REQUIRED>
+<!ELEMENT adres (miejsce, ulica, kod_pocztowy)>
+<!ELEMENT ulica (#PCDATA)>
+<!ATTLIST adres termin_dostarczenia CDATA #IMPLIED>
+<!ATTLIST adres kraj (Polska) #FIXED "Polska">
+<!ELEMENT artykuly (artykul+)>
+<!ELEMENT artykul (film|ksiazka|plyta)>
+<!ATTLIST artykul id ID #REQUIRED>
+<!ELEMENT film (tytul, autor, rok_wydania, czas_trwania)>
+<!ELEMENT ksiazka (tytul, autor, rok_wydania, nr_wydania)>
+<!ELEMENT plyta (tytul, wykonawca, wydawca, rok_wydania,czas_trwania)>
+<!ELEMENT miejsce (#PCDATA)>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT rok_wydania (#PCDATA)>
+<!ELEMENT czas_trwania (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT nr_wydania (#PCDATA)>
+<!ELEMENT wykonawca (#PCDATA)>
+<!ELEMENT wydawca (#PCDATA)>
