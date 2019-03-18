@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glowny xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="zad3.xsd">
+	<element1>tekst</element1>
+	<element3>tekst</element3>
+	<element1>tekst</element1>
+</glowny>

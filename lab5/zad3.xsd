@@ -1,0 +1,12 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="glowny" type="elementy"/> 
+<xsd:complexType name="elementy"> 
+<xsd:sequence> 
+<xsd:element name="element1" type="xsd:string" maxOccurs="2" /> 
+<xsd:element name="element3" type="xsd:string" minOccurs="0"/> 
+<xsd:element name="element1" type="xsd:string" minOccurs="0"/> 
+</xsd:sequence> 
+</xsd:complexType> 
+</xsd:schema>
+
+<!-- nie moze byc all wraz z max i min occurs wiesz niz 1 -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+<!-- deklaracja elementu glownego i przestrzeni nazw 
+-->
+<!-- dalej definicje typow, deklaracje elementow i 
+atrybutow -->
+	<xsd:element name="kolor">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="czerwony" type="typ_kolor"/>
+				<xsd:element name="zielony" type="typ_kolor"/>
+				<xsd:element name="niebieski" type="typ_kolor"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+<xsd:simpleType name="typ_kolor">
+		<xsd:restriction base="xsd:integer">
+			<xsd:maxInclusive value="256" />
+			<xsd:minInclusive value="0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>
+

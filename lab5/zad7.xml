@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zamowienie numer_zamowienia="Z13" xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="zad7.xsd">
+	<adres termin_dostarczenia='21-09-2019' kraj='Polska'>
+		<miejsce>Dom na Gorze</miejsce>
+		<ulica>Niebieska</ulica>
+		<kod_pocztowy>23312</kod_pocztowy>
+	</adres>
+	<artykuly>
+		<artykul id='P23'>
+			<film>
+				<tytul>Telefon</tytul>
+				<autor>Graham Test</autor>
+				<rok_wydania>09-01-2017</rok_wydania>
+				<czas_trwania>143 minuty</czas_trwania>
+			</film>
+		</artykul>
+		<artykul id='P13'>
+			<ksiazka>
+				<tytul>U Informatyka</tytul>
+				<autor>Iksemel Monitorowski</autor>
+				<rok_wydania>01-03-2015</rok_wydania>
+				<nr_wydania>A1-B13</nr_wydania>
+			</ksiazka>
+		</artykul>
+		<artykul id='P1'>
+			<plyta>
+				<tytul>Za Hardwerem</tytul>
+				<wykonawca>Klawisz</wykonawca>
+				<wydawca>PC Sound</wydawca>
+				<rok_wydania>12-04-2000</rok_wydania>
+				<czas_trwania>90 minut</czas_trwania>
+			</plyta>
+		</artykul>
+	</artykuly>
+</zamowienie>
