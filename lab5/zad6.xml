@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osoba xmlns:xsi=
+"http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="zad6.xsd">
+	<imie>Marcel</imie>
+	<nazwisko>Dajnowicz</nazwisko>
+	<numer>123456</numer>
+	<plec>mezczyzna</plec>
+</osoba>

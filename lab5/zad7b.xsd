@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+
+
+	<xsd:simpleType name="typ_punkty">
+			<xsd:union memberTypes="brak liczby"/>
+	</xsd:simpleType>
+
+	<xsd:element name="punkty" type="typ_punkty" />
+
+
+
+	<xsd:simpleType name="liczby">
+		<xsd:list itemType="typ_liczby2">
+		</xsd:list>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="typ_liczby2">
+		<xsd:restriction base="xsd:integer">
+			<xsd:maxInclusive value="10" />
+			<xsd:minInclusive value="0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="typ_liczby">
+		<xsd:restriction base="liczby">
+			<xsd:length value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	
+
+
+	<xsd:simpleType name="brak">
+  		 <xsd:restriction base="xsd:string">
+			 <xsd:enumeration value="brak"/>
+			 <xsd:enumeration value="brak danych"/>
+  		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+
+
+</xsd:schema>

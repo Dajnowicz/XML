@@ -1,0 +1,43 @@
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="osoba" type="typ_osoba" />
+	<xsd:complexType name="typ_osoba">
+		<xsd:sequence>
+			<xsd:element name="imie" type="typ_imie"/>
+			<xsd:element name="nazwisko" type="typ_nazwisko" />
+			<xsd:element name="numer" type="typ_numer" />
+			<xsd:element name="plec" type="typ_plec"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="typ_imie">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="3" />
+			<xsd:maxLength value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="typ_nazwisko">
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="3" />
+			<xsd:maxLength value="30" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+	<xsd:simpleType name="typ_numer">
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="6" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="typ_plec">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="mezczyzna|kobieta" />
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>	
