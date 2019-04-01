@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sklep>
+    <plyta>
+        <tytul>Sen o 7 szklankach</tytul>
+        <wykonawca>Coma</wykonawca>
+		<cena waluta="zł">35.90</cena>
+    </plyta>
+    <plyta> 
+        <tytul tlumaczenie="Filmowa orkiestra">The Cinematic Orchestra</tytul>
+        <wykonawca>To Believe</wykonawca> 
+		<cena waluta='zł'>40.30</cena>
+    </plyta>
+</sklep>
+

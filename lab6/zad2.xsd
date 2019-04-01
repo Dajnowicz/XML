@@ -1,0 +1,17 @@
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="numer_telefonu" type="typ_numer_telefonu" />
+	<xsd:complexType name="typ_numer_telefonu">
+		<xsd:sequence>
+			<xsd:element name="numer" type="typ_numer"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+<xsd:simpleType name="typ_numer">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="replace"/>
+			<xsd:pattern value="[0-9]{3}\-[0-9]{3}\-[0-9]{3}|\+[0-9]{2} [0-9]{3} [0-9]{3} [0-9]{3}|\([0-9]{2}\) [0-9]{3} [0-9]{2} [0-9]{2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>	

@@ -1,0 +1,15 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="cena" type="typ_cena" />
+	<xsd:complexType name="typ_cena">
+		<xsd:sequence>
+			<xsd:element name="cena2" type="typ_cena2" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+<xsd:simpleType name="typ_cena2">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{2}\.[0-9]{2}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

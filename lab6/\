@@ -1,0 +1,19 @@
+
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="slowo" type="typ_slowo" />
+	
+	<xsd:complexType name="typ_slowo">
+		<xsd:sequence>
+			<xsd:element name="definicja" type="typ_definicja" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+<xsd:simpleType name="typ_definicja">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[s][a-zA-Z]{2,3}|[a]{3}*[A-Za-z]" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+</xsd:schema>

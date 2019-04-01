@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grupy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="zad2.xsd">
+<osoba NIP="12345678" pesel="970539124">
+	<imie>Jan</imie>
+	<nazwisko>Kowalski</nazwisko>
+</osoba>
+<adres>
+	<ulica>Legionow</ulica>
+	<numer>230</numer>
+</adres>
+
+</grupy>
