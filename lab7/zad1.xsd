@@ -1,0 +1,40 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="ludzie">
+  <xsd:complexType>
+    <xsd:sequence>
+	    <xsd:element name="uczniowie" type="typ_uczniowie"/>
+	    <xsd:element name="nauczyciele" type="typ_nauczyciele"/>
+	    <xsd:element name="pozostali" type="typ_pozostali"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  </xsd:element>
+
+<xsd:complexType name="typ_uczniowie">
+		<xsd:sequence>
+			<xsd:element ref="osoba" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+<xsd:complexType name="typ_nauczyciele">
+		<xsd:sequence>
+			<xsd:element ref="osoba" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+<xsd:complexType name="typ_pozostali">
+		<xsd:sequence>
+			<xsd:element ref="osoba" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="osoba" type="typ_osoba"/>
+
+		<xsd:complexType name="typ_osoba">
+			<xsd:sequence>
+				<xsd:element name="imie"/>
+				<xsd:element name="nazwisko"/>
+			</xsd:sequence>
+			<xsd:attribute name="plec" />
+		</xsd:complexType>
+
+</xsd:schema>

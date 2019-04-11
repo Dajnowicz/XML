@@ -1,0 +1,32 @@
+<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+
+
+<xsd:element name="grupy">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="osoba" type="osoba_typ"/>
+				<xsd:element name="adres" type="grupa_typ"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:complexType name="osoba_typ">
+		<xsd:sequence>
+			<xsd:element name="imie" type="xsd:string" />
+			<xsd:element name="nazwisko" type="xsd:string" />
+		</xsd:sequence>
+		<xsd:attribute name="NIP" type="xsd:string"/>
+		<xsd:attribute name="pesel" type="xsd:string"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="grupa_typ">
+		<xsd:sequence>
+			<xsd:element name="ulica" type="xsd:string" />
+			<xsd:element name="numer" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
+

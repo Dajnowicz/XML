@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ludzie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="student.xsd">
+	<uczniowie>
+		<osoba plec="kobieta">
+			<imie>Aga</imie>
+			<nazwisko> Kowalska</nazwisko>
+		</osoba>
+	</uczniowie>
+
+	<nauczyciele>
+		<osoba plec="mezczyzna">
+			<imie>Jan</imie>
+			<nazwisko>Nowak</nazwisko>
+		</osoba>
+	</nauczyciele>
+
+	<pozostali>
+		<osoba plec="mezczyzna">
+			<imie>Adam</imie>
+			<nazwisko>Babel</nazwisko>
+		</osoba>
+	</pozostali>
+</ludzie>

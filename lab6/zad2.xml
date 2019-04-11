@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numer_telefonu xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="zad2.xsd">
+<!--	<numer>000-000-000</numer>	-->
+<!--	 <numer>+48 000 000 000</numer> --> 
+	 <numer>(58) 000 00 00</numer> 
+</numer_telefonu>
