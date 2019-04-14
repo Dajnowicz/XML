@@ -1,5 +1,4 @@
 # Definicja typu dokumentu - definicja elementów i atrybutów
-Foobar is a Python library for dealing with word pluralization.
 
 ## Zadanie 1. 
 Dany jest plik XML. Postaraj się odganąć czy plik ma prawidłową składnie oraz jakie są ewentulane błędy. Następnie przy pomocy walidatora lub przeglądarki internetowej, sprawdź czy został poprawnie skonstruowany. Jeżeli nie popraw błędy w możliwie najprostrzy sposób.
