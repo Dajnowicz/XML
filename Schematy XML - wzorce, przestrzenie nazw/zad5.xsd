@@ -1,30 +1,31 @@
-<xsd:schema xmlns:xsd=
-"http://www.w3.org/2001/XMLSchema">
-	<xsd:element name="sklep" type="typ_sklep" />
-	
-	<xsd:complexType name="typ_sklep">
-		<xsd:sequence>
-			<xsd:element name="plyta" type="typ_plyta" />
-		</xsd:sequence>
-	</xsd:complexType>
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.company.org"
+            xmlns="http://www.company.org"
+            elementFormDefault="qualified" attributeFormDefault="unqualified">
 
-	<xsd:complexType name="typ_plyta">
-		<xsd:sequence>
-			<xsd:element name="tytul" type="typ_tytul" />
-			<xsd:element name="wykonawca" type="xsd:string" />
-			<xsd:element name="cena" type="typ_cena" />
-		</xsd:sequence>
-	</xsd:complexType>
+  <xsd:element name="sklep" type="typ_sklep" />
 
-	<xsd:simpleType name="typ_tytul">
-		<xsd:restriction base="xsd:string">
-		</xsd:restriction>
-	<xsd:attribute name="tlumaczenie" type="xsd:string" use="optional"/>
-	</xsd:simpleType>
+  <xsd:complexType name="typ_sklep">
+    <xsd:sequence>
+      <xsd:element name="plyta" type="typ_plyta" />
+    </xsd:sequence>
+  </xsd:complexType>
 
-	<xsd:simpleType name="typ_cena">
-		<xsd:restriction base="xsd:string">
-		</xsd:restriction>
-	<xsd:attribute name="waluta" type="xsd:string" use="optional"/>
-	</xsd:simpleType>
+  <xsd:complexType name="typ_plyta">
+    <xsd:sequence>
+      <xsd:element name="tytul" type="xsd:string">      
+      </xsd:element>
+      <xsd:element name="wykonawca" type="xsd:string" />
+      <xsd:element name="cena" type="typ_cena" />
+    </xsd:sequence>
+    <xsd:attribute name="tlumaczenie" use="optional" type="xsd:string" form="qualified" />
+  </xsd:complexType>
+
+
+
+  <xsd:simpleType name="typ_cena">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9]*[0-9]\.[0-9][0-9]" />
+    </xsd:restriction>
+  </xsd:simpleType>
 </xsd:schema>

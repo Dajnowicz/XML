@@ -1,0 +1,74 @@
+﻿<xsd:schema xmlns:xsd=
+"http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="zamowienie" type="typ_zamowienie" />
+	
+	<xsd:complexType name="typ_zamowienie">
+		<xsd:sequence>
+			<xsd:element name="adres" type="typ_adres" />
+			<xsd:element name="artykuly" type="typ_artykuly" />
+		</xsd:sequence>
+	<xsd:attribute name="numer_zamowienia" type="xsd:string" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="typ_adres">
+		<xsd:sequence>
+			<xsd:element name="miejsce" type="xsd:string" />
+			<xsd:element name="ulica" type="xsd:string" />
+			<xsd:element name="kod_pocztowy" type="typ_kod_pocztowy"/>
+		</xsd:sequence>
+	<xsd:attribute name="termin_dostarczenia" type="xsd:string" use="required"/>
+	<xsd:attribute name="kraj" type="xsd:string" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="typ_artykuly">
+		<xsd:sequence>
+			<xsd:element name="artykul" type="typ_artykul" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="typ_artykul">
+		<xsd:sequence>
+			<xsd:element name="film" type="typ_film" minOccurs="0" />
+			<xsd:element name="ksiazka" type="typ_ksiazka" minOccurs="0" />
+			<xsd:element name="plyta" type="typ_plyta" minOccurs="0" />
+		</xsd:sequence>
+	<xsd:attribute name="id" type="xsd:string" use="required"/>
+	</xsd:complexType>
+
+	<xsd:complexType name="typ_film">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string" />
+			<xsd:element name="autor" type="xsd:string" />
+			<xsd:element name="rok_wydania" type="xsd:string"/>
+			<xsd:element name="czas_trwania" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="typ_ksiazka">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string" />
+			<xsd:element name="autor" type="xsd:string" />
+			<xsd:element name="rok_wydania" type="xsd:string"/>
+			<xsd:element name="nr_wydania" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="typ_plyta">
+		<xsd:sequence>
+			<xsd:element name="tytul" type="xsd:string" />
+			<xsd:element name="wykonawca" type="xsd:string" />
+			<xsd:element name="wydawca" type="xsd:string"/>
+			<xsd:element name="rok_wydania" type="xsd:string" />
+			<xsd:element name="czas_trwania" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="typ_kod_pocztowy">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{5}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

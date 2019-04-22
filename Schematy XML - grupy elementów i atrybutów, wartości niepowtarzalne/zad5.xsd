@@ -1,0 +1,55 @@
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="nauka" type="typ_nauka" />
+
+  <xsd:complexType name="typ_nauka">
+    <xsd:sequence>
+      <xsd:element name="rodzaje" type="typ_rodzaje" />
+      <xsd:element name="rzeczowniki" type="typ_rzeczowniki" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="typ_rodzaje">
+    <xsd:sequence>
+      <xsd:element name="rodzaj" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="typ_rzeczowniki">
+    <xsd:sequence>
+      <xsd:element name="rzeczownik" type="typ_rzeczownik" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="typ_rzeczownik">
+    <xsd:sequence>
+      <xsd:element name="nazwa" type="xsd:string">
+        <xsd:unique name="produkt_kluczZlozony">
+          <xsd:selector xpath="nazwa"/>
+          <xsd:field xpath="nazwa"/>
+        </xsd:unique>
+      </xsd:element>
+      <xsd:element name="synonim" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="rodzaj" type="xsd:string">
+        
+        <xsd:key name="id_rodzaj">
+          <xsd:selector xpath="rodzaje"/>
+          <xsd:field xpath="@rodzaj"/>
+        </xsd:key>
+
+        <xsd:keyref name="klucz_ref" refer="id_rodzaj">
+          <xsd:selector xpath="rzeczownik"/>
+          <xsd:field xpath="@rodzaj"/>
+        </xsd:keyref>
+
+      </xsd:element>
+    </xsd:sequence>
+    
+    
+  </xsd:complexType>
+  
+  
+  
+
+
+    </xsd:schema>

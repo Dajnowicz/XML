@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<firma xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="zad4.xsd">
+  
+  <produkt id="l121">
+    <nazwa>Krem</nazwa>
+    <producent>Nivea</producent>
+    <cena>2.50</cena>
+  </produkt>
+  
+  <zakup id_ref="l121">
+    <data_zakupu>12.01.2010</data_zakupu>
+    <ilosc>1</ilosc>
+  </zakup>
+  
+</firma>
